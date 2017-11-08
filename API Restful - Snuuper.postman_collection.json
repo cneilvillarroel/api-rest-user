@@ -1,0 +1,179 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API Restful - Snuuper",
+		"_postman_id": "94d9a1f0-9a21-22c1-712b-8bac8defc447",
+		"description": "CRUD de usuario con login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3002/api/user",
+			"request": {
+				"url": "http://localhost:3002/api/user",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Obtener todos los usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/user",
+			"request": {
+				"url": "http://localhost:3002/api/user/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Obtener un usuario por id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/user",
+			"request": {
+				"url": "http://localhost:3002/api/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Christopher",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Villarroel",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "cneil.villarroel@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "mishima",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Registra un usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/user",
+			"request": {
+				"url": "http://localhost:3002/api/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "mishima",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Login de usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/user",
+			"request": {
+				"url": "http://localhost:3002/api/user/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Jon",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Snow",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "j.snow@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "jsnow",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Updatea un usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/user/999",
+			"request": {
+				"url": "http://localhost:3002/api/user/999",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "Elimina un usuario"
+			},
+			"response": []
+		}
+	]
+}
